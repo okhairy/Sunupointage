@@ -1,0 +1,35 @@
+<div class="layout">
+    <!-- Intégration du SidebarComponent -->
+    <app-sidebar></app-sidebar> <!-- Le composant sidebar est appelé ici -->
+  
+    <div class="content">
+      <!-- Section pour uploader un fichier CSV -->
+      <div class="upload-container">
+        <label class="upload-label">
+          <input type="file" (change)="onFileUpload($event)" accept=".csv" />
+          <span>Uploader un fichier CSV</span>
+        </label>
+      </div>
+  
+      <!-- Titre de la section des apprenants -->
+      <h2>Liste des apprenants</h2>
+      
+      <!-- Table pour afficher les apprenants -->
+      <table class="learners-table">
+        <thead>
+          <tr>
+            <th>Nom</th>
+            <th>Catégorie</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let learner of learners">
+            <td>{{ learner.name }}</td>
+            <td>{{ learner.category }}</td>
+            <td>{{ learner.email }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

@@ -1,0 +1,37 @@
+.layout {
+    display: flex; /* Utilisation de flexbox pour aligner le sidebar et le contenu */
+  }
+  
+  .content {
+    flex-grow: 1; /* Permet au contenu de prendre tout l'espace restant */
+    padding: 20px; /* Ajout de padding autour du contenu */
+  }
+  
+  .upload-container {
+    margin-bottom: 20px; /* Espacement en bas de la section d'upload */
+  }
+  
+  .upload-label {
+    display: inline-block;
+    padding: 10px 20px; /* Padding à l'intérieur du label */
+    background-color: #28a745; /* Couleur de fond du bouton d'upload */
+    color: white; /* Couleur du texte */
+    border-radius: 5px; /* Bords arrondis */
+    cursor: pointer; /* Curseur pointer pour indiquer que c'est cliquable */
+  }
+  
+  .learners-table {
+    width: 100%; /* La table prend toute la largeur */
+    border-collapse: collapse; /* Évite les doubles bordures */
+  }
+  
+  .learners-table th,
+  .learners-table td {
+    padding: 10px; /* Padding pour les cellules */
+    text-align: left; /* Alignement à gauche du texte */
+    border-bottom: 1px solid #ccc; /* Bordure en bas des cellules */
+  }
+  
+  .learners-table th {
+    background-color: #f2f2f2; /* Couleur de fond pour les en-têtes de table */
+  }
